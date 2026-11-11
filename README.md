@@ -169,7 +169,9 @@ npm run check     # manifest against the schema of the bundled @companion-module
 npm run package   # check, test, bundle, and write dist/sennheiser-ew-g3-<version>.tgz
 ```
 
-The package is reproducible: the same sources give the same bytes. Pushing a
+The package is reproducible: its files carry a fixed timestamp and owner, so
+the same sources give the same archive contents anywhere, and the same bytes on
+the same Node.js version (gzip output differs between zlib versions). Pushing a
 `v*` tag builds it in CI and attaches the `.tgz` and `SHA256SUMS` to a GitHub
 release. The tag must match the manifest version.
 
