@@ -1,0 +1,28 @@
+{
+	"$schema": "https://raw.githubusercontent.com/bitfocus/companion-module-base/main/assets/manifest.schema.json",
+	"type": "connection",
+	"id": "sennheiser-ew-g3",
+	"name": "Sennheiser evolution wireless G3/G4 receivers",
+	"shortname": "ew G3/G4 RX",
+	"description": "Battery, RF, AF and warnings from ew G3 and G4 rack receivers over Sennheiser's Media Control Protocol",
+	"version": "0.2.0",
+	"license": "MIT",
+	"repository": "git+https://github.com/FiLORUX/companion-module-sennheiser-ew-g3.git",
+	"bugs": "https://github.com/FiLORUX/companion-module-sennheiser-ew-g3/issues",
+	"maintainers": [
+		{
+			"name": "David Thåst",
+			"github": "FiLORUX"
+		}
+	],
+	"legacyIds": ["thast-sennheiser-g3"],
+	"manufacturer": "Sennheiser",
+	"products": ["EM 300 G3", "EM 500 G3", "EM 300-500 G4", "EM 2000", "EM 2050"],
+	"keywords": ["radio mic", "wireless", "receiver", "battery", "rf", "telemetry", "evolution wireless", "ew"],
+	"runtime": {
+		"type": "node22",
+		"api": "nodejs-ipc",
+		"apiVersion": "2.1.3",
+		"entrypoint": "../dist/main.js"
+	}
+}

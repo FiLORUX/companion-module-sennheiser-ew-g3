@@ -1,0 +1,41 @@
+{
+	"name": "companion-module-sennheiser-ew-g3",
+	"version": "0.2.0",
+	"private": true,
+	"type": "module",
+	"description": "Bitfocus Companion module: battery, RF and AF telemetry from Sennheiser evolution wireless G3/G4 rack receivers",
+	"license": "MIT",
+	"author": "David Thåst",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/FiLORUX/companion-module-sennheiser-ew-g3.git"
+	},
+	"bugs": {
+		"url": "https://github.com/FiLORUX/companion-module-sennheiser-ew-g3/issues"
+	},
+	"homepage": "https://github.com/FiLORUX/companion-module-sennheiser-ew-g3#readme",
+	"main": "dist/main.js",
+	"files": [
+		"companion/",
+		"dist/main.js",
+		"README.md",
+		"LICENSE"
+	],
+	"engines": {
+		"node": ">=22"
+	},
+	"scripts": {
+		"bundle": "node scripts/bundle.mjs",
+		"build": "npm run bundle",
+		"test": "node --test test/",
+		"check": "node scripts/check-manifest.mjs",
+		"package": "npm run check && npm test && npm run build && node scripts/package.mjs",
+		"probe": "node tools/probe.mjs"
+	},
+	"dependencies": {
+		"@companion-module/base": "2.1.3"
+	},
+	"devDependencies": {
+		"esbuild": "^0.28.2"
+	}
+}
