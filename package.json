@@ -27,7 +27,7 @@
 	"scripts": {
 		"bundle": "node scripts/bundle.mjs",
 		"build": "npm run bundle",
-		"test": "node --test test/",
+		"test": "node --test test/*.test.js",
 		"check": "node scripts/check-manifest.mjs",
 		"package": "npm run check && npm test && npm run build && node scripts/package.mjs",
 		"probe": "node tools/probe.mjs"
