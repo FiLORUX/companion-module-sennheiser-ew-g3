@@ -9,8 +9,9 @@ First public release.
 - Module id is now `sennheiser-ew-g3`. The previous private id
   `thast-sennheiser-g3` is listed in `legacyIds`, so Companion offers this
   module as the upgrade for a connection still on the old id. It does not
-  switch the connection by itself; the variable, feedback and action ids are
-  unchanged, so keys keep working after the switch.
+  switch the connection by itself. The variable, feedback and action ids are
+  unchanged, so existing keys should carry over; that switch has not yet been
+  tried on a live install.
 - Presets reference variables as `$(<connection label>:…)`, the same form a
   trigger or a hand-built key uses. Before, they used the module id, which
   Companion rewrites to the label when a preset is dragged out. That worked
