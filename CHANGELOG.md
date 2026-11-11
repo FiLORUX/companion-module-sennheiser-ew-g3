@@ -11,8 +11,10 @@ First public release.
   module as the upgrade for a connection still on the old id. It does not
   switch the connection by itself; the variable, feedback and action ids are
   unchanged, so keys keep working after the switch.
-- Presets name variables by the connection's label, so they work whatever the
-  connection is called. They used to assume the module id.
+- Presets reference variables as `$(<connection label>:…)`, the same form a
+  trigger or a hand-built key uses. Before, they used the module id, which
+  Companion rewrites to the label when a preset is dragged out. That worked
+  too, but only there.
 - `Frequency` and `AF` keep their unconfirmed trailing fields
   (`frequencyExtra`, `afExtra`) instead of discarding them.
 - MIT licence, manifest validated against the schema of the bundled

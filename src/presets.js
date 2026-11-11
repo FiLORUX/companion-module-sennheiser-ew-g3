@@ -32,9 +32,9 @@ const alarmLadder = (rx) => [
 
 /**
  * @param {{ n: number, label: string }[]} receivers
- * @param {string} connection the connection's label, which is the variable
- *   prefix Companion resolves -- `$(<label>:rx1_battery)`. A literal module id
- *   would only work for a connection that happens to be named after it.
+ * @param {string} connection the connection's label: `$(<label>:rx1_battery)`
+ *   is the form that works everywhere, in a trigger or a hand-built key as well
+ *   as in a dragged preset (Companion rewrites a module-id prefix only there).
  * @returns {{ structure: object[], presets: Record<string, object> }}
  */
 export function buildPresets(receivers, connection) {
