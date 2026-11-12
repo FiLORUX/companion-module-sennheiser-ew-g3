@@ -12,13 +12,31 @@
 	"maintainers": [
 		{
 			"name": "David Thåst",
-			"github": "FiLORUX"
+			"github": "FiLORUX",
+			"url": "https://thast.works"
 		}
 	],
-	"legacyIds": ["thast-sennheiser-g3"],
+	"legacyIds": [
+		"thast-sennheiser-g3"
+	],
 	"manufacturer": "Sennheiser",
-	"products": ["EM 300 G3", "EM 500 G3", "EM 300-500 G4", "EM 2000", "EM 2050"],
-	"keywords": ["radio mic", "wireless", "receiver", "battery", "rf", "telemetry", "evolution wireless", "ew"],
+	"products": [
+		"EM 300 G3",
+		"EM 500 G3",
+		"EM 300-500 G4",
+		"EM 2000",
+		"EM 2050"
+	],
+	"keywords": [
+		"radio mic",
+		"wireless",
+		"receiver",
+		"battery",
+		"rf",
+		"telemetry",
+		"evolution wireless",
+		"ew"
+	],
 	"runtime": {
 		"type": "node22",
 		"api": "nodejs-ipc",

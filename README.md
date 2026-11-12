@@ -179,8 +179,31 @@ Source layout: `src/protocol.js` (decoder and UDP client, no Companion
 dependency), `src/main.js` (the connection: config, variables, feedbacks,
 actions), `src/presets.js`, `tools/probe.mjs` (command line, same decoder).
 
+## Contributing
+
+Reports are as welcome as code, and the most useful contribution right now is
+a [receiver report](https://github.com/FiLORUX/companion-module-sennheiser-ew-g3/issues/new?template=g4-report.md)
+from a model that has not been measured yet. There is no such thing as a
+question too basic to ask; if something here is unclear, that is a fault in the
+documentation. For a change to the code, please open an issue first so we can
+agree the shape of it, keep pull requests small, and run `npm run package`
+before you push.
+
+## Acknowledgements
+
+- [`senn_rx_monitor`](https://github.com/s0600204-LiSP-Plugins/senn_rx_monitor)
+  by s0600204, whose working receiver monitor made the field order learnable
+  at all. This module was written from scratch and measured against hardware,
+  but it would have taken far longer without that reference.
+- The [Bitfocus Companion](https://bitfocus.io/companion) team and its
+  community, for a platform that makes this kind of tool worth building.
+
 ## Licence
 
 MIT. See [LICENSE](LICENSE). Sennheiser and evolution wireless are trademarks
 of Sennheiser electronic SE & Co. KG. This project is not affiliated with or
 endorsed by Sennheiser.
+
+---
+
+Maintained by David Thåst, broadcast engineer, at [thast.works](https://thast.works).
